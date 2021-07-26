@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .attribution { 
     font-size: 11px; text-align: center; 
 }
+
 .attribution a {
     color: hsl(228, 45%, 44%); 
 }
@@ -11,56 +18,81 @@ body {
     background-color: rgb(167, 167, 167);
 }
 
-.single-price-card {
+.price-card {
+    color: white;
     font-family: "Karla";
     height: 480px;
     line-height: 1.8;
-    margin: auto;
+    margin: 50px auto;
     position: relative;
     width: 640px;
 }
-.spc-left {
+
+.price-card-top {
+    background-color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    max-height: 220px;
+    padding: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 640px;
+}
+
+.price-card-top>h1 {
+    color: hsl(179, 62%, 43%);
+    margin-top: 0;
+}
+
+.price-card-top>h2 {
+    color: hsl(71, 73%, 54%);
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.price-card-top>p {
+    color: hsl(218, 22%, 67%);
+    padding-top: 5px;
+}
+
+.price-card-left {
     background-color: hsl(179, 62%, 43%);
     border-bottom-left-radius: 8px;
-    height: 180px;
+    height: 260px;
     padding: 40px;
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 240px;
+    width: 320px;
 }
-.spc-left>button {
+
+.price-card-left>button {
     border: none;
     background-color: hsl(71, 73%, 54%);
     color: white;
     font-family: "Karla";
     padding: 16px;
 }
-.spc-right {
+
+.price-card-right {
     background-color: hsl(179, 64%, 46%);
     border-bottom-right-radius: 8px;
-    height: 180px;
+    height: 260px;
     padding: 40px;
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 240px;
+    width: 320px;
 }
-.spc-top {
-    background-color: white;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    max-height: 140px;
-    padding: 40px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 560px;
+
+.price-card-right>ul {
+    padding-top: 8px;
 }
-.spc-top>h1 {
-    color: hsl(179, 62%, 43%);
-    margin-top: 0;
-}
-.spc-top>p {
-    color: hsl(218, 22%, 67%);
+
+.price-card-right>ul>li {
+    font-size: 14px;
+    list-style: none;
+    line-height: normal;
+    padding: 2px;
 }
