@@ -32,26 +32,26 @@ body {
     background-color: white;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    max-height: 220px;
-    padding: 40px;
+    height: 220px;
+    padding: 34px;
     position: absolute;
     top: 0;
     left: 0;
     width: 640px;
 }
 
-.price-card-top>h1 {
+.price-card-top h1 {
     color: hsl(179, 62%, 43%);
     margin-top: 0;
 }
 
-.price-card-top>h2 {
+.price-card-top h2 {
     color: hsl(71, 73%, 54%);
     font-size: 18px;
     padding-top: 10px;
 }
 
-.price-card-top>p {
+.price-card-top p {
     color: hsl(218, 22%, 67%);
     padding-top: 5px;
 }
@@ -60,37 +60,52 @@ body {
     background-color: hsl(179, 62%, 43%);
     border-bottom-left-radius: 8px;
     height: 260px;
-    padding: 40px;
+    padding: 34px;
     position: absolute;
     bottom: 0;
     left: 0;
     width: 320px;
 }
 
-.price-card-left>button {
-    border: none;
+.ammount {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.duration {
+    color: hsl(179, 58%, 71%);
+    padding-left: 10px;
+}
+
+.price-card-left button {
     background-color: hsl(71, 73%, 54%);
+    border: none;
+    border-radius: 5px;
     color: white;
     font-family: "Karla";
-    padding: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 24px;
+    padding: 14px;
+    width: 100%;
 }
 
 .price-card-right {
-    background-color: hsl(179, 64%, 46%);
+    background-color: hsl(179, 47%, 52%);
     border-bottom-right-radius: 8px;
     height: 260px;
-    padding: 40px;
+    padding: 34px;
     position: absolute;
     bottom: 0;
     right: 0;
     width: 320px;
 }
 
-.price-card-right>ul {
+.price-card-right ul {
     padding-top: 8px;
 }
 
-.price-card-right>ul>li {
+.price-card-right ul li {
     font-size: 14px;
     list-style: none;
     line-height: normal;
