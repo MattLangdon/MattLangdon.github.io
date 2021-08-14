@@ -111,3 +111,39 @@ body {
     line-height: normal;
     padding: 2px;
 }
+
+/*MOBILE*/
+@media only screen and (max-width: 375px) {
+
+    .price-card {
+        font-size: 14px;
+        height: 720px;
+        width: 310px;
+    }
+
+    .price-card-top {
+        height: 270px;
+        padding: 25px;
+        width: 310px;
+    }
+
+    .price-card-top h2 {
+        font-size: 14px;
+    }
+
+    .price-card-left {
+        border-radius: 0px;
+        height: 230px;
+        padding: 25px;
+        top: 270px;
+        width: 310px;
+    }
+
+    .price-card-right {
+        border-bottom-left-radius: 8px;
+        height: 230px;
+        padding: 25px;
+        top: 500px;
+        width: 310px;
+    }
+}
